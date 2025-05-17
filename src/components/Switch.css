@@ -1,0 +1,43 @@
+/* Custom slider animation */
+.slider::before {
+    content: '';
+    position: absolute;
+    height: 1.2em;
+    width: 1.2em;
+    border-radius: 20px;
+    left: 0.5em;
+    bottom: 0.5em;
+    transition: 0.4s cubic-bezier(0.81, -0.04, 0.38, 1.5);
+    box-shadow: inset 8px -4px 0px 0px #fff;
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(1.8em);
+    box-shadow: inset 15px -4px 0px 15px #ffcf48;
+  }
+  
+  /* Stars */
+  .star {
+    background-color: #fff;
+    border-radius: 9999px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    transition: all 0.4s;
+  }
+  
+  .star_1 {
+    left: 2.5em;
+    top: 0.5em;
+  }
+  
+  .star_2 {
+    left: 2.2em;
+    top: 1.2em;
+  }
+  
+  .star_3 {
+    left: 3em;
+    top: 0.9em;
+  }
+  
