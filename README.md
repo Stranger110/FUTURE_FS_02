@@ -1,54 +1,59 @@
-# React + TypeScript + Vite
+# 🌤️ Climacity – A Modern Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Climacity is a sleek, responsive weather application built using **React**, **TypeScript**, **Tailwind CSS**, and **shadcn/ui**, powered by the **OpenWeather API**. It provides real-time weather updates for any location with a clean and modern interface.
 
-Currently, two official plugins are available:
+>  This project is built as part of the **Future Interns** initiative to showcase practical skills in frontend development and API integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🌍 Search weather by city name
+- 📍 Real-time temperature, humidity, wind, and condition updates
+- 🎨 Beautiful and responsive UI using shadcn/ui and Tailwind CSS
+- 🔐 Type-safe codebase with TypeScript
+- 📦 Clean code architecture and component structure
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui**
+- **OpenWeather API**
+
+---
+
+## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/5edf86af-8ad8-4ab1-8d8c-2ddb16b44fe4)
+---
+![image](https://github.com/user-attachments/assets/b0b14516-f2ad-4cc0-a598-31144449b432)
+---
+![image](https://github.com/user-attachments/assets/1fa0c6da-72b4-44c1-9f90-3e7c4e8cdedc)
+
+
+
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Stranger110/FUTURE_FS_02.git
+cd FUTURE_FS_02
+npm install
+
+Create a .env file in the root directory:
+VITE_WEATHER_API_KEY=your_openweather_api_key  (Add your OpenWeather API key)
+
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📜 License
+This project is licensed under the MIT License.
